@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "87a9ae6d-5248-4af0-8fef-8b4beafa122b",
+		"name": "MISO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EXPERIMENTO 1",
+			"item": [
+				{
+					"name": "health check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Salida Paciente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/entrada_paciente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"entrada_paciente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
