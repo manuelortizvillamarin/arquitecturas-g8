@@ -1,7 +1,6 @@
-from flaskr import create_app
-from flask_restful import Api
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 
+from flaskr import create_app
 from .servicio import monitor
 
 app = create_app('default')
@@ -10,4 +9,4 @@ app_context.push()
 
 cors = CORS(app)
 
-
+monitor.run()
